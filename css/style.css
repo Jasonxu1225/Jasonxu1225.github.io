@@ -1696,6 +1696,13 @@ body.offcanvas {
   text-decoration: none;
 }
 
+.edu-logo {
+  height: 22px;        /* good academic size */
+  width: auto;
+  object-fit: contain;
+}
+
+
 .edu-school a:hover {
   text-decoration: underline;
 }
