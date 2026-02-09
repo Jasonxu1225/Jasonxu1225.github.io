@@ -9,7 +9,7 @@
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 
-  <!-- Facebook and Twitter integration -->
+	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
@@ -164,159 +164,230 @@
 				  </div>
 				</div>
 
-				<!-- Year tabs -->
+				<!-- Main tabs: Selected vs All -->
 				<div class="row">
 				  <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
 					<div class="tab" style="text-align:center; margin-top:8px; margin-bottom:8px; margin-left:-220px;">
-					  <button class="tablinks" onclick="openYear(event,'Y2025')" id="defaultOpen">
-						<span class="tabtext">2025</span>
+					  <button class="tablinks pub-tablinks" onclick="openPub(event,'pubSelected')" id="pubDefaultOpen">
+						<span class="tabtext">Selected Publications</span>
 					  </button>
-					  <button class="tablinks" onclick="openYear(event,'Y2024')">
-						<span class="tabtext">2024</span>
-					  </button>
-					  <button class="tablinks" onclick="openYear(event,'Y2022')">
-						<span class="tabtext">2022</span>
+					  <button class="tablinks pub-tablinks" onclick="openPub(event,'pubAll')">
+						<span class="tabtext">All Publications</span>
 					  </button>
 					</div>
 				  </div>
 				</div>
 
-				<!-- 2025 Publications -->
-				<div id="Y2025" class="tabcontent">
-<!--				  <div class="row">-->
-<!--					<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">-->
-<!--					  <h3 class="sub-header animate-box" style="font-size: 18px; font-weight: 520; margin-bottom: 3px;">2025</h3>-->
-<!--					</div>-->
-<!--				  </div>-->
+				<!-- ===================== Selected Publications (default) ===================== -->
+				<div id="pubSelected" class="tabcontent pub-tabcontent">
 				  <div class="row">
 					<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 					  <ul>
-                        <li><strong>Sim2Real VLA: Zero-Shot Generalization of Synthesized Skills to Realistic Manipulation</strong>
-                            <br> Runyi Zhao, <strong>Sheng Xu</strong>, Ruixing Jin, Yueci Deng, Yunxin Tai, Kui Jia, Guiliang Liu
-							<br> <i>International Conference on Learning Representations (<strong>ICLR</strong>), 2026</i>
-                            <br> <a href="https://openreview.net/pdf?id=H4SyKHjd4c" target="_blank">[Paper]</a>
-                            <a href="https://github.com/DexForce/EmbodiChain/" target="_blank">[Code]</a>
-<!--							<img src="https://img.shields.io/github/stars/Jasonxu1225/UA-PbRL?color=success&logo=github">-->
-						</li>
+						<!-- 2025 (first-author / co-first) -->
 						<li><strong>A Distributional Approach to Uncertainty-Aware Preference Alignment Using Offline Demonstrations</strong>
 							<br> <strong>Sheng Xu</strong>, Bo Yue, Hongyuan Zha, Guiliang Liu
 							<br> <i>International Conference on Learning Representations (<strong>ICLR</strong>), 2025</i>
-                            <br> <a href="https://openreview.net/pdf?id=RKOAU5ti1y" target="_blank">[Paper]</a>
-                            <a href="https://github.com/Jasonxu1225/UA-PbRL" target="_blank">[Code]</a>
-<!--							<img src="https://img.shields.io/github/stars/Jasonxu1225/UA-PbRL?color=success&logo=github">-->
+							<br> <a href="https://openreview.net/pdf?id=RKOAU5ti1y" target="_blank">[Paper]</a>
+							<a href="https://github.com/Jasonxu1225/UA-PbRL" target="_blank">[Code]</a>
 						</li>
-						<div style="margin: 0.5em 0;"> </div>
+
+						<div style="margin: 0.5em 0;"></div>
+
+						<li><strong>Uncertainty-aware Preference Alignment for Diffusion Policies</strong>
+							<br> Runqing Miao*, <strong>Sheng Xu*<sup>#</sup></strong>, Runyi Zhao, Wai Kin Victor Chan, Guiliang Liu
+							<br> <i>Annual Conference on Neural Information Processing Systems (<strong>NeurIPS</strong>), 2025</i>
+							<br> <a href="https://openreview.net/pdf?id=oG1CIBWQ77" target="_blank">[Paper]</a>
+							<a href="https://github.com/mr20010112/Diff_UAPA" target="_blank">[Code]</a>
+						</li>
+
+						<div style="margin: 0.5em 0;"></div>
+
+						<li><strong>Toward Exploratory Inverse Constraint Inference with Generative Diffusion Verifiers</strong>
+							<br> Runyi Zhao*, <strong>Sheng Xu*</strong>, Bo Yue, Guiliang Liu
+							<br> <i>International Conference on Learning Representations (<strong>ICLR</strong>), 2025</i>
+							<br> <a href="https://openreview.net/pdf?id=0UvlnHgaii" target="_blank">[Paper]</a>
+							<a href="https://github.com/ZhaoRunyi/ExICL" target="_blank">[Code]</a>
+						</li>
+
+						<div style="margin: 0.5em 0;"></div>
+
 						<li><strong>Risk, Reward, and Reinforcement Learning in Ice Hockey Analytics</strong>
 							<br> <strong>Sheng Xu</strong>, Oliver Schulte, Yudong Luo, Pascal Poupart, Guiliang Liu
 							<br> <i>Book Chapter in <strong>Artificial Intelligence and Machine Learning in Sports Science</strong>, Springer, 2025</i>
 							<br> <i>German Version: <strong>Künstliche Intelligenz und maschinelles Lernen in der Sportwissenschaft</strong></i>
 							<br>
-                            <a href="./files/sports_book_English.pdf" target="_blank">[Paper (English)]</a>
-                            <a href="./files/sports_book_German.pdf" target="_blank">[Paper (German)]</a>
-                            <a href="https://github.com/Guiliang/DRL-ice-hockey" target="_blank">[Code]</a>
-<!--							<img src="https://img.shields.io/github/stars/Guiliang/DRL-ice-hockey?color=success&logo=github">-->
-
-<!--									<br> <a href="https://www.cs.sfu.ca/~oschulte/files/pubs/11_ML%20ice%20hockey_Schulte_englisch.pdf" target="_blank">[Paper (draft version)]</a>-->
-<!--									<img src="https://www.springer.com/public/images/springer-logo.svg" alt="Springer Logo" width="100" height="30" style="margin-left: 15px;">-->
-						<div style="margin: 0.5em 0;"> </div>
-						<li><strong>Uncertainty-aware Preference Alignment for Diffusion Policies</strong>
-							<br> Runqing Miao*, <strong>Sheng Xu*<sup>#</sup></strong>, Runyi Zhao, Wai Kin Victor Chan, Guiliang Liu
-							<br> <i>Annual Conference on Neural Information Processing Systems (<strong>NeurIPS</strong>), 2025</i>
-                            <br> <a href="https://openreview.net/pdf?id=oG1CIBWQ77" target="_blank">[Paper]</a>
-                            <a href="https://github.com/mr20010112/Diff_UAPA" target="_blank">[Code]</a>
-<!--							<img src="https://img.shields.io/github/stars/mr20010112/Diff_UAPA?color=success&logo=github">-->
+							<a href="./files/sports_book_English.pdf" target="_blank">[Paper (English)]</a>
+							<a href="./files/sports_book_German.pdf" target="_blank">[Paper (German)]</a>
+							<a href="https://github.com/Guiliang/DRL-ice-hockey" target="_blank">[Code]</a>
 						</li>
+
 						<div style="margin: 0.5em 0;"></div>
-						<li><strong>Toward Exploratory Inverse Constraint Inference with Generative Diffusion Verifiers</strong>
-							<br> Runyi Zhao*, <strong>Sheng Xu*</strong>, Bo Yue, Guiliang Liu
-							<br> <i>International Conference on Learning Representations (<strong>ICLR</strong>), 2025</i>
-                            <br> <a href="https://openreview.net/pdf?id=0UvlnHgaii" target="_blank">[Paper]</a>
-                            <a href="https://github.com/ZhaoRunyi/ExICL" target="_blank">[Code]</a>
-<!--							<img src="https://img.shields.io/github/stars/ZhaoRunyi/ExICL?color=success&logo=github">-->
-						</li>
-						<div style="margin: 0.5em 0;"> </div>
-						<li><strong>A Comprehensive Survey on Inverse Constrained Reinforcement Learning</strong>
-							<br> Guiliang Liu, <strong>Sheng Xu</strong>, Shicheng Liu, Ashish Gaurav, Sriram Ganapathi Subramanian, Pascal Poupart
-							<br> <i>Transactions on Machine Learning Research (<strong>TMLR</strong>), 2025</i>
-                            <br> <a href="https://openreview.net/pdf?id=WUQsBiJqyP" target="_blank">[Paper]</a>
-                            <a href="https://github.com/Jasonxu1225/Awesome-Constraint-Inference-in-RL" target="_blank">[Code]</a>
-<!--							<img src="https://img.shields.io/github/stars/Jasonxu1225/Awesome-Constraint-Inference-in-RL?color=success&logo=github">-->
-<!--									<br> <a href="https://arxiv.org/pdf/2409.07569" target="_blank">[Paper (arxiv)]</a>-->
-<!--									<img src="https://jmlr.org/tmlr/img/tmlr.jpg" alt="TMLR Logo" width="51" height="36" style="margin-left: 15px;">-->
-						</li>
-					  </ul>
-					</div>
-				  </div>
-				</div>
 
-				<!-- 2024 Publications -->
-				<div id="Y2024" class="tabcontent">
-<!--				  <div class="row">-->
-<!--					<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">-->
-<!--					  <h3 class="sub-header animate-box" style="font-size: 18px; font-weight: 520; margin-bottom: 3px;">2024</h3>-->
-<!--					</div>-->
-<!--				  </div>-->
-				  <div class="row">
-					<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-					  <ul>
+						<!-- 2024 -->
 						<li><strong>Robust Inverse Constrained Reinforcement Learning under Model Misspecification</strong>
 							<br> <strong>Sheng Xu</strong>, Guiliang Liu
 							<br> <i>International Conference on Machine Learning (<strong>ICML</strong>), 2024</i>
-                            <br> <a href="https://openreview.net/pdf?id=pkUl39b0in" target="_blank">[Paper]</a>
-                            <a href="https://github.com/Jasonxu1225/AR-ICRL" target="_blank">[Code]</a>
-<!--							<img src="https://img.shields.io/github/stars/Jasonxu1225/AR-ICRL?color=success&logo=github">-->
-
-<!--									<br> <a href="https://openreview.net/pdf?id=pkUl39b0in" target="_blank">[Paper]</a>, <a href="https://github.com/Jasonxu1225/AR-ICRL" target="_blank">[Code]</a>-->
-<!--									<img src="https://icml.cc/static/core/img/ICML-logo.svg" alt="ICML Logo" width="100" height="30" style="margin-left: 10px;">-->
+							<br> <a href="https://openreview.net/pdf?id=pkUl39b0in" target="_blank">[Paper]</a>
+							<a href="https://github.com/Jasonxu1225/AR-ICRL" target="_blank">[Code]</a>
 						</li>
-						<div style="margin: 0.5em 0;"> </div>
+
+						<div style="margin: 0.5em 0;"></div>
+
 						<li><strong>Uncertainty-aware Constraint Inference in Inverse Constrained Reinforcement Learning</strong>
 							<br> <strong>Sheng Xu</strong>, Guiliang Liu
 							<br> <i>International Conference on Learning Representations (<strong>ICLR</strong>), 2024</i>
-                            <br> <a href="https://openreview.net/pdf?id=ILYjDvUM6U" target="_blank">[Paper]</a>
-                            <a href="https://github.com/Jasonxu1225/UAICRL" target="_blank">[Code]</a>
-<!--							<img src="https://img.shields.io/github/stars/Jasonxu1225/UAICRL?color=success&logo=github">-->
-
-<!--									<br> <a href="https://openreview.net/pdf?id=ILYjDvUM6U" target="_blank">[Paper]</a>, <a href="https://github.com/Jasonxu1225/UAICRL" target="_blank">[Code]</a>-->
-<!--									<img src="https://iclr.cc/static/core/img/ICLR-logo.svg" alt="ICLR Logo" width="100" height="30" style="margin-left: 15px;">-->
+							<br> <a href="https://openreview.net/pdf?id=ILYjDvUM6U" target="_blank">[Paper]</a>
+							<a href="https://github.com/Jasonxu1225/UAICRL" target="_blank">[Code]</a>
 						</li>
-						<div style="margin: 0.5em 0;"> </div>
-						<li><strong>Enhancing Human-AI Collaboration Through Logic-Guided Reasoning</strong>
-							<br> Chengzhi Cao, Yinghao Fu, <strong>Sheng Xu</strong>, Ruimao Zhang, Shuang Li
-							<br> <i>International Conference on Learning Representations (<strong>ICLR</strong>), 2024</i>
-                            <br> <a href="https://openreview.net/pdf?id=TWC4gLoAxY" target="_blank">[Paper]</a>
-<!--									<br> <a href="https://openreview.net/pdf?id=TWC4gLoAxY" target="_blank">[Paper]</a>, <a href="https://github.com/Chengzhi-Cao/LGR/tree/main" target="_blank">[Code]</a>-->
-<!--									<img src="https://iclr.cc/static/core/img/ICLR-logo.svg" alt="ICLR Logo" width="100" height="30" style="margin-left: 15px;">-->
-						</li>
-					  </ul>
-					</div>
-				  </div>
-				</div>
 
-				<!-- 2022 Publications -->
-				<div id="Y2022" class="tabcontent">
-<!--				  <div class="row">-->
-<!--					<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">-->
-<!--					  <h3 class="sub-header animate-box" style="font-size: 18px; font-weight: 520; margin-bottom: 3px;">2022</h3>-->
-<!--					</div>-->
-<!--				  </div>-->
-				  <div class="row">
-					<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-					  <ul>
+						<div style="margin: 0.5em 0;"></div>
+
+						<!-- 2022 -->
 						<li><strong>An Improved Lightweight YOLOv5 Model Based on Attention Mechanism for Face Mask Detection</strong>
 							<br> <strong>Sheng Xu</strong>, Zhanyu Guo, Yuchi Liu, Jingwei Fan, Xuxu Liu
 							<br> <i>International Conference on Artificial Neural Networks (<strong>ICANN</strong>), 2022 <strong style="color: red;">(Oral)</strong></i>
-                            <br> <a href="https://arxiv.org/pdf/2203.16506.pdf" target="_blank">[Paper]</a>
-                            <a href="https://github.com/Jasonxu1225/Improved-Lightweight-YOLOv5-for-Face-Mask-Detection" target="_blank">[Code]</a>
-<!--							<img src="https://img.shields.io/github/stars/Jasonxu1225/Improved-Lightweight-YOLOv5-for-Face-Mask-Detection?color=success&logo=github">-->
-
-<!--									<br> <a href="https://arxiv.org/pdf/2203.16506.pdf" target="_blank">[Paper]</a>, <a href="https://github.com/Jasonxu1225/Improved-Lightweight-YOLOv5-for-Face-Mask-Detection" target="_blank">[Code]</a>-->
-<!--									<img src="https://e-nns.org/icann2022/wp-content/uploads/sites/5/2018/10/enns-150x150.png" alt="ICANN Logo" width="38" height="38" style="margin-left: 15px;">-->
+							<br> <a href="https://arxiv.org/pdf/2203.16506.pdf" target="_blank">[Paper]</a>
+							<a href="https://github.com/Jasonxu1225/Improved-Lightweight-YOLOv5-for-Face-Mask-Detection" target="_blank">[Code]</a>
 						</li>
 					  </ul>
 					</div>
 				  </div>
 				</div>
+
+				<!-- ===================== All Publications (year tabs) ===================== -->
+				<div id="pubAll" class="tabcontent pub-tabcontent">
+
+				  <!-- Year tabs -->
+				  <div class="row">
+					<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+					  <div class="tab" style="text-align:center; margin-top:8px; margin-bottom:8px; margin-left:-220px;">
+						<button class="tablinks year-tablinks" onclick="openYear(event,'Y2025')" id="yearDefaultOpen">
+						  <span class="tabtext">2025</span>
+						</button>
+						<button class="tablinks year-tablinks" onclick="openYear(event,'Y2024')">
+						  <span class="tabtext">2024</span>
+						</button>
+						<button class="tablinks year-tablinks" onclick="openYear(event,'Y2022')">
+						  <span class="tabtext">2022</span>
+						</button>
+					  </div>
+					</div>
+				  </div>
+
+				  <!-- 2025 Publications -->
+				  <div id="Y2025" class="tabcontent year-tabcontent">
+					<div class="row">
+					  <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+						<ul>
+						  <li><strong>Sim2Real VLA: Zero-Shot Generalization of Synthesized Skills to Realistic Manipulation</strong>
+							  <br> Runyi Zhao, <strong>Sheng Xu</strong>, Ruixing Jin, Yueci Deng, Yunxin Tai, Kui Jia, Guiliang Liu
+							  <br> <i>International Conference on Learning Representations (<strong>ICLR</strong>), 2026</i>
+							  <br> <a href="https://openreview.net/pdf?id=H4SyKHjd4c" target="_blank">[Paper]</a>
+							  <a href="https://github.com/DexForce/EmbodiChain/" target="_blank">[Code]</a>
+						  </li>
+
+						  <div style="margin: 0.5em 0;"> </div>
+
+						  <li><strong>A Distributional Approach to Uncertainty-Aware Preference Alignment Using Offline Demonstrations</strong>
+							  <br> <strong>Sheng Xu</strong>, Bo Yue, Hongyuan Zha, Guiliang Liu
+							  <br> <i>International Conference on Learning Representations (<strong>ICLR</strong>), 2025</i>
+							  <br> <a href="https://openreview.net/pdf?id=RKOAU5ti1y" target="_blank">[Paper]</a>
+							  <a href="https://github.com/Jasonxu1225/UA-PbRL" target="_blank">[Code]</a>
+						  </li>
+
+						  <div style="margin: 0.5em 0;"> </div>
+
+						  <li><strong>Risk, Reward, and Reinforcement Learning in Ice Hockey Analytics</strong>
+							  <br> <strong>Sheng Xu</strong>, Oliver Schulte, Yudong Luo, Pascal Poupart, Guiliang Liu
+							  <br> <i>Book Chapter in <strong>Artificial Intelligence and Machine Learning in Sports Science</strong>, Springer, 2025</i>
+							  <br> <i>German Version: <strong>Künstliche Intelligenz und maschinelles Lernen in der Sportwissenschaft</strong></i>
+							  <br>
+							  <a href="./files/sports_book_English.pdf" target="_blank">[Paper (English)]</a>
+							  <a href="./files/sports_book_German.pdf" target="_blank">[Paper (German)]</a>
+							  <a href="https://github.com/Guiliang/DRL-ice-hockey" target="_blank">[Code]</a>
+						  </li>
+
+						  <div style="margin: 0.5em 0;"> </div>
+
+						  <li><strong>Uncertainty-aware Preference Alignment for Diffusion Policies</strong>
+							  <br> Runqing Miao*, <strong>Sheng Xu*<sup>#</sup></strong>, Runyi Zhao, Wai Kin Victor Chan, Guiliang Liu
+							  <br> <i>Annual Conference on Neural Information Processing Systems (<strong>NeurIPS</strong>), 2025</i>
+							  <br> <a href="https://openreview.net/pdf?id=oG1CIBWQ77" target="_blank">[Paper]</a>
+							  <a href="https://github.com/mr20010112/Diff_UAPA" target="_blank">[Code]</a>
+						  </li>
+
+						  <div style="margin: 0.5em 0;"></div>
+
+						  <li><strong>Toward Exploratory Inverse Constraint Inference with Generative Diffusion Verifiers</strong>
+							  <br> Runyi Zhao*, <strong>Sheng Xu*</strong>, Bo Yue, Guiliang Liu
+							  <br> <i>International Conference on Learning Representations (<strong>ICLR</strong>), 2025</i>
+							  <br> <a href="https://openreview.net/pdf?id=0UvlnHgaii" target="_blank">[Paper]</a>
+							  <a href="https://github.com/ZhaoRunyi/ExICL" target="_blank">[Code]</a>
+						  </li>
+
+						  <div style="margin: 0.5em 0;"> </div>
+
+						  <li><strong>A Comprehensive Survey on Inverse Constrained Reinforcement Learning</strong>
+							  <br> Guiliang Liu, <strong>Sheng Xu</strong>, Shicheng Liu, Ashish Gaurav, Sriram Ganapathi Subramanian, Pascal Poupart
+							  <br> <i>Transactions on Machine Learning Research (<strong>TMLR</strong>), 2025</i>
+							  <br> <a href="https://openreview.net/pdf?id=WUQsBiJqyP" target="_blank">[Paper]</a>
+							  <a href="https://github.com/Jasonxu1225/Awesome-Constraint-Inference-in-RL" target="_blank">[Code]</a>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				  </div>
+
+				  <!-- 2024 Publications -->
+				  <div id="Y2024" class="tabcontent year-tabcontent">
+					<div class="row">
+					  <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+						<ul>
+						  <li><strong>Robust Inverse Constrained Reinforcement Learning under Model Misspecification</strong>
+							  <br> <strong>Sheng Xu</strong>, Guiliang Liu
+							  <br> <i>International Conference on Machine Learning (<strong>ICML</strong>), 2024</i>
+							  <br> <a href="https://openreview.net/pdf?id=pkUl39b0in" target="_blank">[Paper]</a>
+							  <a href="https://github.com/Jasonxu1225/AR-ICRL" target="_blank">[Code]</a>
+						  </li>
+
+						  <div style="margin: 0.5em 0;"> </div>
+
+						  <li><strong>Uncertainty-aware Constraint Inference in Inverse Constrained Reinforcement Learning</strong>
+							  <br> <strong>Sheng Xu</strong>, Guiliang Liu
+							  <br> <i>International Conference on Learning Representations (<strong>ICLR</strong>), 2024</i>
+							  <br> <a href="https://openreview.net/pdf?id=ILYjDvUM6U" target="_blank">[Paper]</a>
+							  <a href="https://github.com/Jasonxu1225/UAICRL" target="_blank">[Code]</a>
+						  </li>
+
+						  <div style="margin: 0.5em 0;"> </div>
+
+						  <li><strong>Enhancing Human-AI Collaboration Through Logic-Guided Reasoning</strong>
+							  <br> Chengzhi Cao, Yinghao Fu, <strong>Sheng Xu</strong>, Ruimao Zhang, Shuang Li
+							  <br> <i>International Conference on Learning Representations (<strong>ICLR</strong>), 2024</i>
+							  <br> <a href="https://openreview.net/pdf?id=TWC4gLoAxY" target="_blank">[Paper]</a>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				  </div>
+
+				  <!-- 2022 Publications -->
+				  <div id="Y2022" class="tabcontent year-tabcontent">
+					<div class="row">
+					  <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+						<ul>
+						  <li><strong>An Improved Lightweight YOLOv5 Model Based on Attention Mechanism for Face Mask Detection</strong>
+							  <br> <strong>Sheng Xu</strong>, Zhanyu Guo, Yuchi Liu, Jingwei Fan, Xuxu Liu
+							  <br> <i>International Conference on Artificial Neural Networks (<strong>ICANN</strong>), 2022 <strong style="color: red;">(Oral)</strong></i>
+							  <br> <a href="https://arxiv.org/pdf/2203.16506.pdf" target="_blank">[Paper]</a>
+							  <a href="https://github.com/Jasonxu1225/Improved-Lightweight-YOLOv5-for-Face-Mask-Detection" target="_blank">[Code]</a>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				  </div>
+
+				</div><!-- end pubAll -->
 
 			  </div>
 			</section>
@@ -580,29 +651,56 @@
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
+	<!-- Publications tabs script -->
+	<script>
+	  function openPub(evt, pubId) {
+		// Hide all publication tab contents
+		var pubTabs = document.getElementsByClassName("pub-tabcontent");
+		for (var i = 0; i < pubTabs.length; i++) {
+		  pubTabs[i].style.display = "none";
+		}
+
+		// Remove active from publication tab buttons
+		var pubBtns = document.getElementsByClassName("pub-tablinks");
+		for (var j = 0; j < pubBtns.length; j++) {
+		  pubBtns[j].classList.remove("active");
+		}
+
+		// Show selected publication tab
+		document.getElementById(pubId).style.display = "block";
+		evt.currentTarget.classList.add("active");
+
+		// If switching to "All Publications", ensure a default year is opened
+		if (pubId === "pubAll") {
+		  var yearDefault = document.getElementById("yearDefaultOpen");
+		  if (yearDefault) yearDefault.click();
+		}
+	  }
+
+	  function openYear(evt, yearId) {
+		// Hide all year tab contents (only inside "All Publications")
+		var tabs = document.getElementsByClassName("year-tabcontent");
+		for (var i = 0; i < tabs.length; i++) {
+		  tabs[i].style.display = "none";
+		}
+
+		// Remove active from year tab buttons
+		var btns = document.getElementsByClassName("year-tablinks");
+		for (var j = 0; j < btns.length; j++) {
+		  btns[j].classList.remove("active");
+		}
+
+		// Show selected year
+		document.getElementById(yearId).style.display = "block";
+		evt.currentTarget.classList.add("active");
+	  }
+
+	  // Default: open "Selected Publications"
+	  document.addEventListener("DOMContentLoaded", function() {
+		var pubDefault = document.getElementById("pubDefaultOpen");
+		if (pubDefault) pubDefault.click();
+	  });
+	</script>
+
 	</body>
 </html>
-
-<script>
-  function openYear(evt, yearId) {
-    // 隐藏所有 tabcontent
-    var tabs = document.getElementsByClassName("tabcontent");
-    for (var i = 0; i < tabs.length; i++) {
-      tabs[i].style.display = "none";
-    }
-    // 移除所有按钮的 active 样式（可选）
-    var btns = document.getElementsByClassName("tablinks");
-    for (var j = 0; j < btns.length; j++) {
-      btns[j].classList.remove("active");
-    }
-    // 显示当前选中的年份内容
-    document.getElementById(yearId).style.display = "block";
-    // 给当前按钮加上 active 样式（可选）
-    evt.currentTarget.classList.add("active");
-  }
-
-  // 页面加载完毕后默认打开 2025
-  document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("defaultOpen").click();
-  });
-</script>

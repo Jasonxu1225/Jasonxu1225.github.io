@@ -1493,4 +1493,38 @@ body.offcanvas {
   box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
 }
 
+/* Make Selected / All buttons larger */
+.pub-tablinks {
+  font-size: 16px;         /* ↑ text size */
+  font-weight: 600;
+  min-width: 200px;        /* block width */
+  border-radius: 6px;     /* smoother corners */
+}
 
+/* Increase spacing between the two buttons */
+.tab .pub-tablinks {
+  margin: 0 10px;
+}
+
+/* Active state (optional, but recommended) */
+.pub-tablinks.active {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.tab {
+  transform: translateX(130px);  /* ← adjust */
+}
+.year-tablinks:first-child {
+  margin-left: -260px;   /* ← adjust this value */
+}
+
+/* FORCE publication buttons to sit closer */
+.colorlib-publication .tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorlib-publication .pub-tablinks {
+  display: inline-block !important;
+  margin: 0 6px !important;   /* controls distance */
+}
