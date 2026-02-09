@@ -1528,3 +1528,100 @@ body.offcanvas {
   display: inline-block !important;
   margin: 0 6px !important;   /* controls distance */
 }
+
+/* ===== Selected publication card ===== */
+.selected-pub-card {
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  margin-top: 10px;
+  margin-bottom: 24px;
+  margin-left: -33px;
+}
+
+/* ===== 左侧图片区域 ===== */
+.pub-thumb {
+  position: relative;        /* 关键：用于定位 ICLR 标签 */
+  width: 180px;              /* 控制图片显示宽度 */
+  flex-shrink: 0;
+}
+
+/* 图片本身：按比例缩放 */
+.pub-thumb img {
+  width: 120%;
+  height: auto;              /* 保证不变形 */
+  object-fit: contain;       /* 不裁剪、不拉伸 */
+  border-radius: 10px;
+  display: block;
+  background: #fff;          /* 防止透明图边缘难看 */
+  margin-left: 5px;
+  margin-top: 6px;
+}
+
+/* ===== ICLR 标签：左上角覆盖 ===== */
+.badge-on-thumb {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  padding: 6px 12px;        /* ↓ 缩小内边距 */
+  font-size: 12px;         /* ↓ 字号变小 */
+  font-weight: 600;
+  color: #fff;
+  background-color: #8FAFA9;
+  border-radius: 999px;
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* ===== 右侧内容 ===== */
+.pub-content {
+    margin-left: 40px;
+    margin-bottom: -15px;
+    margin-right: 10px;
+}
+
+.pub-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.pub-authors {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: -3px;
+}
+
+.pub-meta {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: -5px;
+  font-weight: 600;   /* ← 加粗 */
+}
+
+.pub-links a {
+  margin-right: 0;
+  font-size: 12px;
+  color: #159be2;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
+
+/* ===== 移动端适配 ===== */
+@media (max-width: 768px) {
+  .selected-pub-card {
+    flex-direction: column;
+  }
+
+  .pub-thumb {
+    width: 100%;
+  }
+}
