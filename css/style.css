@@ -229,7 +229,7 @@ figure {
 @media screen and (min-width: 1221px) {
   .container-wrap {
     position: relative;
-    left: min(22px, calc((100vw - 1220px) / 2));
+    left: min(16px, calc((100vw - 1220px) / 2));
   }
 }
 
