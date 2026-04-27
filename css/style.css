@@ -226,6 +226,13 @@ figure {
   max-width: 1220px;
   margin: 0 auto; }
 
+@media screen and (min-width: 1221px) {
+  .container-wrap {
+    position: relative;
+    left: min(22px, calc((100vw - 1220px) / 2));
+  }
+}
+
 #colorlib-main {
   width: calc(100% - 300px);
   float: right;
