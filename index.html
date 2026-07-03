@@ -73,6 +73,7 @@
 						<li class="active"><a href="#" data-nav-section="about">About</a></li>
 						<li><a href="#" data-nav-section="news">News</a></li>
 						<li><a href="#" data-nav-section="publication">Publications</a></li>
+						<li><a href="#" data-nav-section="projects">Projects</a></li>
 <!--						<li><a href="#" data-nav-section="experience">Experiences</a></li>-->
 						<li><a href="#" data-nav-section="education">Education</a></li>
 						<li><a href="#" data-nav-section="honors">Honors and Awards</a></li>
@@ -108,8 +109,8 @@
                             <a href="https://en.nwpu.edu.cn/" target="_blank">Northwestern Polytechnical University (NWPU)</a> in 2023.
                             <br>
                             I am currently a research intern at <a href="https://github.com/JD-OpenSource" target="_blank">Joy Future Academy, JD</a>, working on embodied foundation models and embodied agents.
-							Previously, I was a research intern at <a href="https://www.dexforce.com/" target="_blank">Dexforce Technology</a>, where I served as a core developer of the embodied simulation platform <a href="https://dexforce.com/embodichain/index.html#/" target="_blank">EmbodiChain</a> <a href="https://github.com/DexForce/EmbodiChain" target="_blank"><img src="https://img.shields.io/github/stars/DexForce/EmbodiChain"></a>.
-                            <br>
+							Previously, I was a research intern at <a href="https://www.dexforce.com/" target="_blank">Dexforce Technology</a>.
+
 							My work has been published in top-tier international AI venues, including <strong>RSS</strong>, <strong>ICLR</strong>, <strong>ICML</strong>, and <strong>NeurIPS</strong>. I have also served as a reviewer for leading AI conferences and journals, earning recognitions such as <a href="https://neurips.cc/Conferences/2025/ProgramCommittee" target="_blank">Top Reviewer</a> at <strong>NeurIPS 2025</strong> and <a href="https://icml.cc/Conferences/2026/ProgramCommittee" target="_blank">Gold Reviewer</a> at <strong>ICML 2026</strong>.
 							<br>
                             My research focuses on:
@@ -632,6 +633,51 @@
 			  </div>
 			</section>
 
+			<section class="colorlib-projects" style="margin-bottom: 10px; padding-bottom: 10px;" data-section="projects">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<h2 class="colorlib-heading animate-box" style="margin-bottom: 1px; padding-bottom: 1px;">Projects</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<div class="selected-pub-card project-card">
+								<div class="pub-thumb project-thumb">
+									<img src="projects/EmbodiChain.jpg" alt="EmbodiChain project thumbnail">
+								</div>
+
+								<div class="pub-content project-content">
+									<h3 class="pub-title project-title">
+										<a href="https://github.com/DexForce/EmbodiChain" target="_blank">EmbodiChain</a>
+										<span class="project-role">Core Developer</span>
+									</h3>
+
+									<p class="project-subtitle">
+										An end-to-end, GPU-accelerated, and modular platform for building generalized Embodied Intelligence
+									</p>
+
+									<p class="project-contribution">
+										Developed a scalable, agent-driven robotic data generation pipeline for Sim2Real policy training and generalization.
+									</p>
+
+									<p class="pub-links">
+										<a class="project-github-icon" href="https://github.com/DexForce/EmbodiChain" target="_blank" aria-label="EmbodiChain GitHub repository" title="GitHub">
+											<i class="icon-github"></i>
+										</a>
+										<a class="project-stars-badge" href="https://github.com/DexForce/EmbodiChain/" target="_blank" aria-label="EmbodiChain GitHub stars" title="GitHub stars">
+											<i class="icon-github"></i>
+											<span>Stars</span>
+											<strong id="embodichain-stars">187</strong>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<section class="colorlib-skill" style="margin-bottom: 10px; padding-bottom: 10px;" data-section="education">
 				<div class="colorlib-narrow-content">
 					<div class="row">
@@ -914,11 +960,26 @@
 	  }
 
 	  // Default: open "Selected Publications"
-	  document.addEventListener("DOMContentLoaded", function() {
-		var pubDefault = document.getElementById("pubDefaultOpen");
-		if (pubDefault) pubDefault.click();
-	  });
-	</script>
+		  document.addEventListener("DOMContentLoaded", function() {
+			var pubDefault = document.getElementById("pubDefaultOpen");
+			if (pubDefault) pubDefault.click();
+
+			var starsEl = document.getElementById("embodichain-stars");
+			if (starsEl && window.fetch) {
+			  fetch("https://api.github.com/repos/DexForce/EmbodiChain")
+				.then(function(response) {
+				  if (!response.ok) return null;
+				  return response.json();
+				})
+				.then(function(repo) {
+				  if (repo && typeof repo.stargazers_count === "number") {
+					starsEl.textContent = repo.stargazers_count;
+				  }
+				})
+				.catch(function() {});
+			}
+		  });
+		</script>
 
 	</body>
 </html>
