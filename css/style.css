@@ -1704,71 +1704,15 @@ body.offcanvas {
   margin-bottom: 0;
 }
 
-.project-card .project-github-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  color: #222;
-  background: #f7f7f7;
-  border: 1px solid #d8d8d8;
-  border-radius: 50%;
-  font-size: 15px;
-  line-height: 1;
-  transition: all 0.2s ease;
-}
-
-.project-card .project-github-icon:hover {
-  color: #fff;
-  background: #24292f;
-  border-color: #24292f;
-}
-
-.project-card .project-stars-badge {
-  display: inline-flex;
-  align-items: center;
-  overflow: hidden;
-  height: 26px;
-  color: #24292f;
-  background: #f6f8fa;
-  border: 1px solid #d0d7de;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1;
-}
-
-.project-card .project-stars-badge i {
-  font-size: 14px;
-  margin-left: 8px;
-  margin-right: 5px;
-}
-
-.project-card .project-stars-badge span {
-  padding-right: 8px;
-}
-
-.project-card .project-stars-badge strong {
-  align-items: center;
-  align-self: stretch;
-  background: #fff;
-  border-left: 1px solid #d0d7de;
-  display: inline-flex;
-  min-width: 34px;
-  justify-content: center;
-  padding: 0 8px;
-}
-
 .project-card .project-stars-badge-image {
   align-items: center;
   display: inline-flex;
-  height: 26px;
+  height: 22px;
 }
 
 .project-card .project-stars-badge-image img {
   display: block;
-  height: 26px;
+  height: 22px;
   width: auto;
 }
 
