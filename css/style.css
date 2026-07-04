@@ -1760,6 +1760,18 @@ body.offcanvas {
   padding: 0 8px;
 }
 
+.project-card .project-stars-badge-image {
+  align-items: center;
+  display: inline-flex;
+  height: 26px;
+}
+
+.project-card .project-stars-badge-image img {
+  display: block;
+  height: 26px;
+  width: auto;
+}
+
 @media (max-width: 768px) {
   .project-card {
     align-items: flex-start;

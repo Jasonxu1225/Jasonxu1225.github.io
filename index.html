@@ -664,10 +664,8 @@
 										<a class="project-github-icon" href="https://github.com/DexForce/EmbodiChain" target="_blank" aria-label="EmbodiChain GitHub repository" title="GitHub">
 											<i class="icon-github"></i>
 										</a>
-										<a class="project-stars-badge" href="https://github.com/DexForce/EmbodiChain/" target="_blank" aria-label="EmbodiChain GitHub stars" title="GitHub stars">
-											<i class="icon-github"></i>
-											<span>Stars</span>
-											<strong id="embodichain-stars" aria-live="polite">--</strong>
+										<a class="project-stars-badge-image" href="https://github.com/DexForce/EmbodiChain/" target="_blank" aria-label="EmbodiChain GitHub stars" title="GitHub stars">
+											<img src="https://img.shields.io/github/stars/DexForce/EmbodiChain?style=social&cacheSeconds=300" alt="GitHub stars">
 										</a>
 									</p>
 								</div>
@@ -962,43 +960,6 @@
 		  document.addEventListener("DOMContentLoaded", function() {
 			var pubDefault = document.getElementById("pubDefaultOpen");
 			if (pubDefault) pubDefault.click();
-
-			var starsEl = document.getElementById("embodichain-stars");
-			var starsApiUrl = "https://api.github.com/repos/DexForce/EmbodiChain";
-
-			function formatStars(count) {
-			  if (count >= 1000) {
-				return (count / 1000).toFixed(count < 10000 ? 1 : 0).replace(/\.0$/, "") + "k";
-			  }
-
-			  return String(count);
-			}
-
-			function refreshEmbodiChainStars() {
-			  if (!starsEl || !window.fetch) return;
-
-			  fetch(starsApiUrl + "?_=" + Date.now(), {
-				cache: "no-store",
-				headers: {
-				  Accept: "application/vnd.github+json"
-				}
-			  })
-				.then(function(response) {
-				  if (!response.ok) throw new Error("GitHub stars request failed");
-				  return response.json();
-				})
-				.then(function(repo) {
-				  if (repo && typeof repo.stargazers_count === "number") {
-					starsEl.textContent = formatStars(repo.stargazers_count);
-				  }
-				})
-				.catch(function() {
-				  starsEl.textContent = "--";
-				});
-			}
-
-			refreshEmbodiChainStars();
-			window.setInterval(refreshEmbodiChainStars, 5 * 60 * 1000);
 		  });
 		</script>
 
