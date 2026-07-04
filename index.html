@@ -135,7 +135,6 @@
 							<ul>
 								<li><strong>[2026.04]</strong> <a href="https://shengxu.net/AgentChord/" target="_blank">AgentChord</a> was accepted to <strong>RSS 2026</strong>.</li>
 								<li><strong>[2026.04]</strong> <a href="https://shengxu.net/TacticGen/" target="_blank">TacticGen</a> was released on <strong>arXiv</strong>.</li>
-								<li><strong>[2026.01]</strong> <a href="https://www.sloansportsconference.com/research-papers/hoopeval-individual-player-action-evaluation-via-deep-reinforcement-learning" target="_blank">HoopEval</a> was accepted to <strong>MIT SSAC 2026</strong>.</li>
 								<li><strong>[2026.01]</strong> <a href="https://openreview.net/pdf?id=H4SyKHjd4c" target="_blank">Sim2Real-VLA</a> was accepted to <strong>ICLR 2026</strong>.</li>
 								<li><strong>[2025.09]</strong> <a href="https://openreview.net/pdf?id=oG1CIBWQ77" target="_blank">Diff-UAPA</a> was accepted to <strong>NeurIPS 2025</strong>.</li>
 								<li><strong>[2025.07]</strong> <a href="https://link.springer.com/chapter/10.1007/978-3-662-70155-3_11" target="_blank">RL for Ice Hockey Analysis</a> was published online as <strong>Springer Nature Book Chapter</strong>.</li>
@@ -668,7 +667,7 @@
 										<a class="project-stars-badge" href="https://github.com/DexForce/EmbodiChain/" target="_blank" aria-label="EmbodiChain GitHub stars" title="GitHub stars">
 											<i class="icon-github"></i>
 											<span>Stars</span>
-											<strong id="embodichain-stars">187</strong>
+											<strong id="embodichain-stars" aria-live="polite">--</strong>
 										</a>
 									</p>
 								</div>
@@ -965,19 +964,41 @@
 			if (pubDefault) pubDefault.click();
 
 			var starsEl = document.getElementById("embodichain-stars");
-			if (starsEl && window.fetch) {
-			  fetch("https://api.github.com/repos/DexForce/EmbodiChain")
+			var starsApiUrl = "https://api.github.com/repos/DexForce/EmbodiChain";
+
+			function formatStars(count) {
+			  if (count >= 1000) {
+				return (count / 1000).toFixed(count < 10000 ? 1 : 0).replace(/\.0$/, "") + "k";
+			  }
+
+			  return String(count);
+			}
+
+			function refreshEmbodiChainStars() {
+			  if (!starsEl || !window.fetch) return;
+
+			  fetch(starsApiUrl + "?_=" + Date.now(), {
+				cache: "no-store",
+				headers: {
+				  Accept: "application/vnd.github+json"
+				}
+			  })
 				.then(function(response) {
-				  if (!response.ok) return null;
+				  if (!response.ok) throw new Error("GitHub stars request failed");
 				  return response.json();
 				})
 				.then(function(repo) {
 				  if (repo && typeof repo.stargazers_count === "number") {
-					starsEl.textContent = repo.stargazers_count;
+					starsEl.textContent = formatStars(repo.stargazers_count);
 				  }
 				})
-				.catch(function() {});
+				.catch(function() {
+				  starsEl.textContent = "--";
+				});
 			}
+
+			refreshEmbodiChainStars();
+			window.setInterval(refreshEmbodiChainStars, 5 * 60 * 1000);
 		  });
 		</script>
 
