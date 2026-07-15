@@ -416,6 +416,49 @@ body.offcanvas {
   padding-bottom: 30em;
 }
 
+.about-language-toggle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 0 6px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.about-language-button {
+  border: 0;
+  padding: 3px 5px;
+  background: transparent;
+  color: #777;
+  font-family: "Quicksand", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.about-language-button:hover,
+.about-language-button:focus,
+.about-language-button.active {
+  color: #0484d9;
+}
+
+.about-language-button:focus {
+  outline: 2px solid #0484d9;
+  outline-offset: 1px;
+}
+
+.about-language-button.active {
+  font-weight: 700;
+}
+
+.about-language-separator {
+  color: #b8b8b8;
+}
+
+.about-language-content[hidden] {
+  display: none !important;
+}
+
 @media screen and (max-width: 768px) {
   .colorlib-contact {
       padding-bottom: 20em; }

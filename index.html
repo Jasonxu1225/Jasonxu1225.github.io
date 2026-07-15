@@ -72,13 +72,13 @@
 					<ul>
 						<li class="active"><a href="#" data-nav-section="about">About</a></li>
 						<li><a href="#" data-nav-section="news">News</a></li>
-						<li><a href="#" data-nav-section="publication">Publications</a></li>
-						<li><a href="#" data-nav-section="projects">Projects</a></li>
 <!--						<li><a href="#" data-nav-section="experience">Experiences</a></li>-->
 						<li><a href="#" data-nav-section="education">Education</a></li>
-						<li><a href="#" data-nav-section="honors">Honors and Awards</a></li>
 <!--						<li><a href="#" data-nav-section="presentation">Presentation</a></li>-->
 						<li><a href="#" data-nav-section="internship">Internship</a></li>
+						<li><a href="#" data-nav-section="publication">Publications</a></li>
+						<li><a href="#" data-nav-section="projects">Projects</a></li>
+						<li><a href="#" data-nav-section="honors">Honors and Awards</a></li>
 						<li><a href="#" data-nav-section="teaching">Teaching</a></li>
 						<li><a href="#" data-nav-section="service">Service</a></li>
 <!--						<li><a href="#" data-nav-section="certificate">Certificates</a></li>-->
@@ -102,22 +102,47 @@
 					</div>
 					<div class="row">
                         <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-                            I'm a third-year Ph.D. candidate at <a href="https://www.cuhk.edu.cn/en/" target="_blank">The Chinese University of Hong Kong, Shenzhen (CUHK-SZ)</a>,
-                            supervised by <a href="https://sds.cuhk.edu.cn/en/teacher/630" target="_blank">Prof. Guiliang Liu</a>
-                            and co-supervised by <a href="https://sds.cuhk.edu.cn/en/teacher/65" target="_blank">Prof. Hongyuan Zha</a>.
-                            Previously, I received my Bachelor's degree (rank: 1/225) with the highest honors from
-                            <a href="https://en.nwpu.edu.cn/" target="_blank">Northwestern Polytechnical University (NWPU)</a> in 2023.
-                            <br>
-                            I am currently a research intern at <a href="https://research.joyai.com/" target="_blank">Joy Future Academy, JD</a>, working on embodied foundation models and embodied agents.
-							Previously, I was a research intern at <a href="https://www.dexforce.com/" target="_blank">Dexforce Technology</a>.
+							<div class="about-language-toggle" role="group" aria-label="About language">
+								<button type="button" class="about-language-button active" data-about-language="en" aria-controls="about-content-en" aria-pressed="true">EN</button>
+								<span class="about-language-separator" aria-hidden="true">/</span>
+								<button type="button" class="about-language-button" data-about-language="zh" aria-controls="about-content-zh" aria-pressed="false" lang="zh-CN">中文</button>
+							</div>
 
-							My work has been published in top-tier international AI venues, including <strong>RSS</strong>, <strong>ICLR</strong>, <strong>ICML</strong>, and <strong>NeurIPS</strong>. I have also served as a reviewer for leading AI conferences and journals, earning recognitions such as <a href="https://neurips.cc/Conferences/2025/ProgramCommittee" target="_blank">Top Reviewer</a> at <strong>NeurIPS 2025</strong> and <a href="https://icml.cc/Conferences/2026/ProgramCommittee" target="_blank">Gold Reviewer</a> at <strong>ICML 2026</strong>.
-							<br>
-                            My research focuses on:
-                            <ul>
-                                <li><strong>Robust Reinforcement Learning</strong></li>
-								<li><strong>Embodied Intelligence (e.g., VLAs, embodied agents)</strong></li>
-                            </ul>
+							<div id="about-content-en" class="about-language-content" data-about-language="en" lang="en">
+								I'm a third-year Ph.D. candidate at <a href="https://www.cuhk.edu.cn/en/" target="_blank">The Chinese University of Hong Kong, Shenzhen (CUHK-SZ)</a>,
+								supervised by <a href="https://sds.cuhk.edu.cn/en/teacher/630" target="_blank">Prof. Guiliang Liu</a>
+								and co-supervised by <a href="https://sds.cuhk.edu.cn/en/teacher/65" target="_blank">Prof. Hongyuan Zha</a>.
+								Previously, I received my Bachelor's degree (rank: 1/225) with the highest honors from
+								<a href="https://en.nwpu.edu.cn/" target="_blank">Northwestern Polytechnical University (NWPU)</a> in 2023.
+								<br>
+								I am currently a Research Intern (Talent Program) at <a href="https://research.joyai.com/" target="_blank">Joy Future Academy, JD</a>, working on embodied foundation models and embodied agents for general-purpose embodied intelligence.
+								Previously, I was an Embodied AI Research Intern at <a href="https://www.dexforce.com/" target="_blank">DexForce Technology</a> and an AI Research Intern at Real Analytics team, <a href="https://knighthead.com/" target="_blank">Knighthead Capital</a> (~$19B AUM).
+
+								My work has been published in top-tier international AI venues, including <strong>RSS</strong>, <strong>ICLR</strong>, <strong>ICML</strong>, and <strong>NeurIPS</strong>.
+								<br>
+								My research focuses on:
+								<ul>
+									<li><strong>Robust Reinforcement Learning</strong></li>
+									<li><strong>Embodied Intelligence (e.g., VLAs, embodied agents)</strong></li>
+								</ul>
+							</div>
+
+							<div id="about-content-zh" class="about-language-content" data-about-language="zh" lang="zh-CN" hidden>
+								我是<a href="https://www.cuhk.edu.cn/en/" target="_blank">香港中文大学（深圳）</a>计算机科学三年级博士生，
+								导师为<a href="https://sds.cuhk.edu.cn/en/teacher/630" target="_blank">刘桂良教授</a>，共同导师为<a href="https://sds.cuhk.edu.cn/en/teacher/65" target="_blank">查宏远教授</a>。
+								此前，我于 2023 年以专业排名第 1/225 及最高荣誉获得<a href="https://en.nwpu.edu.cn/" target="_blank">西北工业大学</a>计算机科学与技术学士学位。
+								<br>
+								我目前通过京东人才计划在 <a href="https://research.joyai.com/" target="_blank">Joy Future Academy（京东）</a>担任研究实习生，研究面向通用具身智能的具身基础模型与具身智能体。
+								此前，我曾在 <a href="https://www.dexforce.com/" target="_blank">DexForce Technology</a> 担任具身智能研究实习生，并在 <a href="https://knighthead.com/" target="_blank">Knighthead Capital</a> 旗下 Real Analytics 团队担任 AI 研究实习生（资产管理规模约 190 亿美元）。
+
+								我的研究成果发表于 <strong>RSS</strong>、<strong>ICLR</strong>、<strong>ICML</strong> 和 <strong>NeurIPS</strong> 等国际顶级人工智能会议。
+								<br>
+								我的研究方向包括：
+								<ul>
+									<li><strong>鲁棒强化学习</strong></li>
+									<li><strong>具身智能（如 VLA、具身智能体）</strong></li>
+								</ul>
+							</div>
                         </div>
 					</div>
 				</div>
@@ -145,6 +170,146 @@
 							</ul>
 						</div>
 					</div>
+				</div>
+			</section>
+
+			<section class="colorlib-skill" style="margin-bottom: 10px; padding-bottom: 10px;" data-section="education">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+
+							<h2 class="colorlib-heading animate-box" style="margin-bottom: 1px; padding-bottom: 1px;">Education</h2>
+						</div>
+					</div>
+                    <div class="row">
+                      <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+
+                        <div class="edu-timeline">
+
+                          <div class="edu-item">
+                            <div class="edu-date">Sep. 2023 – Present</div>
+
+                            <div class="edu-line">
+                              <span class="edu-dot"></span>
+                            </div>
+
+                            <div class="edu-content">
+                              <div class="edu-school">
+                                <a href="https://www.cuhk.edu.cn/en" target="_blank">
+                                  The Chinese University of Hong Kong, Shenzhen
+                                </a>
+                                <img src="images/cuhksz-logo.png" alt="CUHK-SZ logo" class="edu-logo">
+                              </div>
+                              <div class="edu-degree">
+                                Ph.D. in Computer Science
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="edu-item">
+                            <div class="edu-date">Sep. 2019 – Jul. 2023</div>
+
+                            <div class="edu-line">
+                              <span class="edu-dot"></span>
+                            </div>
+
+                            <div class="edu-content">
+                              <div class="edu-school">
+                                <a href="https://en.nwpu.edu.cn/" target="_blank">
+                                  Northwestern Polytechnical University
+                                </a>
+                                <img src="images/nwpu-logo.jpg" alt="NWPU logo" class="edu-logo" style="margin-top: -0.6px">
+                              </div>
+                              <div class="edu-degree">
+                                B.S. in Computer Science and Technology
+                                <strong>(with the highest honors)</strong>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+				</div>
+			</section>
+
+			<section class="colorlib-skill" style="margin-bottom: 10px; padding-bottom: 10px;" data-section="internship">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+
+							<h2 class="colorlib-heading animate-box" style="margin-bottom: 1px; padding-bottom: 1px;">Internship</h2>
+						</div>
+					</div>
+                    <div class="row">
+                      <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+
+                        <div class="edu-timeline internship-timeline">
+
+                          <div class="edu-item">
+                            <div class="edu-date">Jun. 2026 – Present</div>
+
+                            <div class="edu-line">
+                              <span class="edu-dot"></span>
+                            </div>
+
+                            <div class="edu-content">
+                              <div class="edu-school">
+								<strong>Research Intern (Talent Program)</strong>,
+                                <a href="https://research.joyai.com/" target="_blank">Joy Future Academy, JD</a>, Shenzhen
+                                <img src="images/jd-logo.png" alt="JD logo" class="edu-logo" style="height: 18px; margin-top: -2px;">
+                              </div>
+                              <div class="edu-degree">
+								Selected for JD's talent program to conduct research on embodied foundation models and embodied agents, with a focus on scalable learning, reasoning, and decision-making for general-purpose embodied intelligence.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="edu-item">
+                            <div class="edu-date">Sep. 2025 – May 2026</div>
+
+                            <div class="edu-line">
+                              <span class="edu-dot"></span>
+                            </div>
+
+                            <div class="edu-content">
+                              <div class="edu-school">
+                                <strong>Embodied AI Research Intern</strong>,
+                                <a href="https://www.dexforce.com/" target="_blank">DexForce Technology</a>, Shenzhen
+                                <img src="images/dexforce-logo.png" alt="Dexforce logo" class="edu-logo">
+                              </div>
+                              <div class="edu-degree">
+                                  Core contributor to <a href="https://github.com/DexForce/EmbodiChain/" target="_blank">EmbodiChain</a>, an open-source, GPU-accelerated embodied intelligence platform; built simulation-based task pipelines and end-to-end Sim-to-Real VLA systems for robust real-robot deployment.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="edu-item">
+                            <div class="edu-date">Sep. 2024 – Aug. 2025</div>
+
+                            <div class="edu-line">
+                              <span class="edu-dot"></span>
+                            </div>
+
+                            <div class="edu-content">
+                              <div class="edu-school">
+								<strong>Sports AI Research Intern</strong>,
+								<a href="https://knighthead.com/" target="_blank">Knighthead Capital</a> (~$19B AUM), Remote
+								<img src="images/knighthead_logo.png" alt="Knighthead Capital logo" class="edu-logo" style="height: 30px; margin-top: -4px;">
+                              </div>
+                              <div class="edu-degree">
+								Collaborated with the
+                                <a href="https://www.realanalytics.co.uk/" target="_blank">Real Analytics</a>
+								team on offline reinforcement learning for football analytics and recommendation.
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
 				</div>
 			</section>
 
@@ -205,7 +370,7 @@
 
                             <p class="pub-links">
                               <a href="https://arxiv.org/abs/2605.11951" target="_blank">[Paper]</a>
-                              <a href="https://github.com/Jasonxu1225/AgentChord" target="_blank">[Code]</a>
+                              <a href="https://github.com/EDEM-AI/AgentChord" target="_blank">[Code]</a>
                               <a href="https://shengxu.net/AgentChord/" target="_blank">[Project Page]</a>
                               <a href="https://mp.weixin.qq.com/s/Bb2A51JmiuyBX8ufeS08wg" target="_blank">[Report (机器之心)]</a>
                             </p>
@@ -447,7 +612,7 @@
 							  <br> <strong>Sheng Xu</strong>, Ruixing Jin, Huayi Zhou, Bo Yue, Guanren Qiao, Yunxin Tai, Yueci Deng, Kui Jia, Guiliang Liu
 							  <br> <i>Robotics: Science and Systems (<strong>RSS</strong>), 2026 <strong style="color: red;">(Oral Presentation)</strong></i>
 							  <br> <a href="https://arxiv.org/abs/2605.11951" target="_blank">[Paper]</a>
-							  <a href="https://github.com/Jasonxu1225/AgentChord" target="_blank">[Code]</a>
+							  <a href="https://github.com/EDEM-AI/AgentChord" target="_blank">[Code]</a>
 							  <a href="https://shengxu.net/AgentChord/" target="_blank">[Project Page]</a>
 							  <a href="https://mp.weixin.qq.com/s/Bb2A51JmiuyBX8ufeS08wg" target="_blank">[Report (机器之心)]</a>
 						  </li>
@@ -672,67 +837,6 @@
 				</div>
 			</section>
 
-			<section class="colorlib-skill" style="margin-bottom: 10px; padding-bottom: 10px;" data-section="education">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-
-							<h2 class="colorlib-heading animate-box" style="margin-bottom: 1px; padding-bottom: 1px;">Education</h2>
-						</div>
-					</div>
-                    <div class="row">
-                      <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-
-                        <div class="edu-timeline">
-
-                          <div class="edu-item">
-                            <div class="edu-date">Sep. 2023 – Present</div>
-
-                            <div class="edu-line">
-                              <span class="edu-dot"></span>
-                            </div>
-
-                            <div class="edu-content">
-                              <div class="edu-school">
-                                <a href="https://www.cuhk.edu.cn/en" target="_blank">
-                                  The Chinese University of Hong Kong, Shenzhen
-                                </a>
-                                <img src="images/cuhksz-logo.png" alt="CUHK-SZ logo" class="edu-logo">
-                              </div>
-                              <div class="edu-degree">
-                                Ph.D. in Computer Science
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="edu-item">
-                            <div class="edu-date">Sep. 2019 – Jul. 2023</div>
-
-                            <div class="edu-line">
-                              <span class="edu-dot"></span>
-                            </div>
-
-                            <div class="edu-content">
-                              <div class="edu-school">
-                                <a href="https://en.nwpu.edu.cn/" target="_blank">
-                                  Northwestern Polytechnical University
-                                </a>
-                                <img src="images/nwpu-logo.jpg" alt="NWPU logo" class="edu-logo" style="margin-top: -0.6px">
-                              </div>
-                              <div class="edu-degree">
-                                B.S. in Computer Science and Technology
-                                <strong>(with the highest honors)</strong>
-                              </div>
-                            </div>
-                          </div>
-
-                        </div>
-
-                      </div>
-                    </div>
-				</div>
-			</section>
-
 			<section class="colorlib-honors" style="margin-bottom: 6px; padding-bottom: 6px;" data-section="honors">
 				<div class="colorlib-narrow-content">
 					<div class="row">
@@ -749,7 +853,7 @@
 							<li><strong>Duan Yong Ping Meritorious Research Award</strong>, 2024</li>
 							<li><strong>Duan Yong Ping Travel Award</strong>, 2024</li>
 							<li><strong>Outstanding Graduate of Shaanxi Province</strong>, 2023</li>
- 							<li><strong>NWPU Top Undergraduate Student Award</strong> (highest honor of undergraduates, only 10 winners), 2022</li>
+							<li><strong>NWPU Top Undergraduate Student Award</strong> (highest honor of undergraduates, only 10 winners), 2022</li>
 							<li><strong>NWPU Top Class Scholarship</strong> (highest scholarship, only 10 winners) 2022</li>
 							<li><strong>Modern Scientists Scholarship</strong> (top 1%), 2022</li>
 							<li><strong>Huawei Scholarship</strong> (top 1%), 2022</li>
@@ -760,85 +864,6 @@
 						</ul>
 						</div>
 					</div>
-				</div>
-			</section>
-
-			<section class="colorlib-skill" style="margin-bottom: 10px; padding-bottom: 10px;" data-section="internship">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-
-							<h2 class="colorlib-heading animate-box" style="margin-bottom: 1px; padding-bottom: 1px;">Internship</h2>
-						</div>
-					</div>
-                    <div class="row">
-                      <div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-
-                        <div class="edu-timeline internship-timeline">
-
-                          <div class="edu-item">
-                            <div class="edu-date">Jun. 2026 – Present</div>
-
-                            <div class="edu-line">
-                              <span class="edu-dot"></span>
-                            </div>
-
-                            <div class="edu-content">
-                              <div class="edu-school">
-                                <strong>Research Intern</strong>,
-                                <a href="https://research.joyai.com/" target="_blank">Joy Future Academy, JD</a>, Shenzhen
-                                <img src="images/jd-logo.png" alt="JD logo" class="edu-logo" style="height: 18px; margin-top: -2px;">
-                              </div>
-                              <div class="edu-degree">
-                                Working on embodied foundation models and embodied agents.
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="edu-item">
-                            <div class="edu-date">Sep. 2025 – May 2026</div>
-
-                            <div class="edu-line">
-                              <span class="edu-dot"></span>
-                            </div>
-
-                            <div class="edu-content">
-                              <div class="edu-school">
-                                <strong>Embodied AI Research Intern</strong>,
-                                <a href="https://www.dexforce.com/" target="_blank">DexForce Technology</a>, Shenzhen
-                                <img src="images/dexforce-logo.png" alt="Dexforce logo" class="edu-logo">
-                              </div>
-                              <div class="edu-degree">
-                                  Core contributor to <a href="https://github.com/DexForce/EmbodiChain/" target="_blank">EmbodiChain</a>, an open-source, GPU-accelerated embodied intelligence platform; built simulation-based task pipelines and end-to-end Sim-to-Real VLA systems for robust real-robot deployment.
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="edu-item">
-                            <div class="edu-date">Sep. 2024 – Aug. 2025</div>
-
-                            <div class="edu-line">
-                              <span class="edu-dot"></span>
-                            </div>
-
-                            <div class="edu-content">
-                              <div class="edu-school">
-                                <strong>Football AI Research Intern</strong>,
-                                <a href="https://www.bcfc.com/pages/en/home" target="_blank">Birmingham City FC</a>, UK (online)
-                                <img src="images/bcfc-logo.png" alt="BCFC logo" class="edu-logo">
-                              </div>
-                              <div class="edu-degree">
-                                Conducted research with
-                                <a href="https://www.realanalytics.co.uk/" target="_blank">Real Analytics</a>
-                                on offline reinforcement learning for football analytics and recommendation.
-                              </div>
-                            </div>
-                          </div>
-
-                        </div>
-
-                      </div>
-                    </div>
 				</div>
 			</section>
 
@@ -911,6 +936,21 @@
 
 	<!-- Publications tabs script -->
 	<script>
+	  function setAboutLanguage(language) {
+		var aboutContents = document.getElementsByClassName("about-language-content");
+		for (var i = 0; i < aboutContents.length; i++) {
+		  var contentIsActive = aboutContents[i].getAttribute("data-about-language") === language;
+		  aboutContents[i].hidden = !contentIsActive;
+		}
+
+		var aboutButtons = document.getElementsByClassName("about-language-button");
+		for (var j = 0; j < aboutButtons.length; j++) {
+		  var buttonIsActive = aboutButtons[j].getAttribute("data-about-language") === language;
+		  aboutButtons[j].classList.toggle("active", buttonIsActive);
+		  aboutButtons[j].setAttribute("aria-pressed", buttonIsActive ? "true" : "false");
+		}
+	  }
+
 	  function openPub(evt, pubId) {
 		// Hide all publication tab contents
 		var pubTabs = document.getElementsByClassName("pub-tabcontent");
@@ -955,6 +995,13 @@
 
 	  // Default: open "Selected Publications"
 		  document.addEventListener("DOMContentLoaded", function() {
+			var aboutLangButtons = document.getElementsByClassName("about-language-button");
+			for (var i = 0; i < aboutLangButtons.length; i++) {
+			  aboutLangButtons[i].addEventListener("click", function() {
+				setAboutLanguage(this.getAttribute("data-about-language"));
+			  });
+			}
+
 			var pubDefault = document.getElementById("pubDefaultOpen");
 			if (pubDefault) pubDefault.click();
 		  });
