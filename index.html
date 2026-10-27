@@ -39,6 +39,7 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/research.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -71,6 +72,7 @@
 				<div id="navbar" class="collapse">
 					<ul>
 						<li class="active"><a href="#" data-nav-section="about">About</a></li>
+						<li><a href="#research" data-nav-section="research">Research</a></li>
 						<li><a href="#" data-nav-section="news">News</a></li>
 <!--						<li><a href="#" data-nav-section="experience">Experiences</a></li>-->
 						<li><a href="#" data-nav-section="education">Education</a></li>
@@ -146,6 +148,82 @@
                         </div>
 					</div>
 				</div>
+			</section>
+
+			<section id="research" class="research-section" data-section="research" aria-labelledby="research-heading">
+			  <div class="colorlib-narrow-content">
+			    <h2 id="research-heading" class="colorlib-heading">Research Overview</h2>
+			    <div class="research-loop" data-active-stage="data">
+			      <header class="research-intro">
+			        <p>Closing the loop between data, foundation models, and real-world deployment.</p>
+			      </header>
+
+			      <div class="research-explorer">
+			        <div class="research-map-area">
+			          <div class="research-map" role="group" aria-label="Explore three connected research directions">
+			            <svg class="research-connections" viewBox="0 0 760 520" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+			              <defs>
+			                <marker id="research-arrow-data" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2c98f0"/></marker>
+			                <marker id="research-arrow-training" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2c98f0"/></marker>
+			                <marker id="research-arrow-deployment" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2c98f0"/></marker>
+			              </defs>
+			              <circle class="research-track" cx="380" cy="250" r="180"/>
+			              <path class="research-edge research-edge-data" d="M 221.069 334.505 A 180 180 0 0 1 261.909 114.152" marker-end="url(#research-arrow-data)"/>
+			              <path class="research-edge research-edge-training" d="M 498.091 114.152 A 180 180 0 0 1 538.931 334.505" marker-end="url(#research-arrow-training)"/>
+			              <path class="research-edge research-edge-deployment" d="M 505.039 379.481 A 180 180 0 0 1 254.961 379.481" marker-end="url(#research-arrow-deployment)"/>
+			              <circle class="research-particle" r="4" fill="#2c98f0"><animateMotion dur="4.5s" repeatCount="indefinite" path="M 221.069 334.505 A 180 180 0 0 1 261.909 114.152"/></circle>
+			              <circle class="research-particle" r="4" fill="#2c98f0"><animateMotion dur="4.5s" repeatCount="indefinite" path="M 498.091 114.152 A 180 180 0 0 1 538.931 334.505"/></circle>
+			              <circle class="research-particle" r="4" fill="#2c98f0"><animateMotion dur="4.5s" repeatCount="indefinite" path="M 505.039 379.481 A 180 180 0 0 1 254.961 379.481"/></circle>
+			            </svg>
+			            <span class="research-edge-label research-edge-label-data">Curated data</span>
+			            <span class="research-edge-label research-edge-label-training">Policy transfer</span>
+			            <span class="research-edge-label research-edge-label-feedback">Evaluation &amp; feedback</span>
+
+			            <button type="button" class="research-node research-node-data is-active" data-research-stage="data" aria-pressed="true" aria-controls="research-detail-data">
+			              <span class="research-node-top"><span class="research-node-number">01</span><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v7c0 4 16 4 16 0V5M4 12v7c0 4 16 4 16 0v-7"/></svg></span>
+			              <strong>Data &amp; evaluation</strong><span class="research-node-caption">Generate &middot; Curate &middot; Validate</span>
+			            </button>
+			            <button type="button" class="research-node research-node-training" data-research-stage="training" aria-pressed="false" aria-controls="research-detail-training">
+			              <span class="research-node-top"><span class="research-node-number">02</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 10 5-10 5L2 7l10-5Zm-10 10 10 5 10-5M2 17l10 5 10-5"/></svg></span>
+			              <strong>Scalable training</strong><span class="research-node-caption">Align &middot; Pretrain &middot; Generalize</span>
+			            </button>
+			            <button type="button" class="research-node research-node-deployment" data-research-stage="deployment" aria-pressed="false" aria-controls="research-detail-deployment">
+			              <span class="research-node-top"><span class="research-node-number">03</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 22h16M7 22v-4l7-5-4-6M14 3l-4 4-4-2M14 3l4 3-2 4"/><circle cx="14" cy="13" r="2"/><circle cx="10" cy="7" r="2"/></svg></span>
+			              <strong>Reliable deployment</strong><span class="research-node-caption">Act &middot; Recover &middot; Improve</span>
+			            </button>
+
+			        <div class="research-details">
+			          <article id="research-detail-data" class="research-detail is-active" data-stage-panel="data" aria-labelledby="research-title-data">
+			            <h4 id="research-title-data">Generate, curate, evaluate.</h4>
+			            <p class="research-description">Scale diverse robot data and measure how well it transfers to the real world.</p>
+			            <ul class="research-topics"><li>Generative simulation</li><li>Data quality &amp; diversity</li><li>Sim-to-real transfer</li></ul>
+			            <div class="research-related"><span>Representative work</span><a href="https://github.com/DexForce/EmbodiChain/" target="_blank" rel="noopener noreferrer">EmbodiChain <span aria-hidden="true">&#8599;</span></a><a href="https://openreview.net/pdf?id=H4SyKHjd4c" target="_blank" rel="noopener noreferrer">Sim2Real-VLA <span aria-hidden="true">&#8599;</span></a><a href="https://arxiv.org/abs/2603.22876" target="_blank" rel="noopener noreferrer">Sim-to-real study <span aria-hidden="true">&#8599;</span></a></div>
+			          </article>
+			          <article id="research-detail-training" class="research-detail" data-stage-panel="training" aria-labelledby="research-title-training" hidden>
+			            <h4 id="research-title-training">Learn across embodiments.</h4>
+			            <p class="research-description">Align heterogeneous experience to pretrain generalist robot foundation models.</p>
+			            <ul class="research-topics"><li>Multimodal alignment</li><li>Shared action spaces</li><li>Scalable pretraining</li></ul>
+			            <div class="research-related"><span>Representative work</span><a href="https://joyai-ra-05.github.io/" target="_blank" rel="noopener noreferrer">JoyAI-RA 0.5 <span aria-hidden="true">&#8599;</span></a></div>
+			          </article>
+			          <article id="research-detail-deployment" class="research-detail" data-stage-panel="deployment" aria-labelledby="research-title-deployment" hidden>
+			            <h4 id="research-title-deployment">Deploy, recover, improve.</h4>
+			            <p class="research-description">Build reliable embodied agents and align policies with uncertain human preferences.</p>
+			            <ul class="research-topics"><li>Agentic recovery</li><li>Preference-based RL</li><li>Uncertainty-aware alignment</li></ul>
+			            <div class="research-related"><span>Representative work</span><a href="https://shengxu.net/AgentChord/" target="_blank" rel="noopener noreferrer">AgentChord <span aria-hidden="true">&#8599;</span></a><a href="https://openreview.net/pdf?id=RKOAU5ti1y" target="_blank" rel="noopener noreferrer">UA-PbRL <span aria-hidden="true">&#8599;</span></a><a href="https://openreview.net/pdf?id=oG1CIBWQ77" target="_blank" rel="noopener noreferrer">Diff-UAPA <span aria-hidden="true">&#8599;</span></a></div>
+			          </article>
+			        </div>
+			          </div>
+
+			          <div class="research-map-controls" hidden>
+			            <div class="research-control-actions"><button type="button" class="research-play" aria-pressed="false"><span class="research-play-icon" aria-hidden="true">&#9654;</span> <span class="research-play-label">Play the loop</span></button><button type="button" class="research-next" hidden>Next stage <span aria-hidden="true">&#8594;</span></button></div>
+			          </div>
+			        </div>
+
+
+			      </div>
+			      <p class="research-sr-only research-stage-status" role="status" aria-live="polite"></p>
+			    </div>
+			  </div>
 			</section>
 
 			<section class="colorlib-news" style="margin-bottom: 6px; padding-bottom: 6px;" data-section="news">
@@ -721,6 +799,24 @@
 
 						  <div style="margin: 0.5em 0;"> </div>
 
+						  <li><strong>Semantics-to-Contact: A Stagewise Framework for Robust Contact-Rich Manipulation</strong>
+							  <br> Guanren Qiao, Ruixiang Ouyang, <strong>Sheng Xu</strong>, Yueci Deng, Yunxin Tai, Kui Jia, Guiliang Liu
+							  <br> <i>Annual Conference on Neural Information Processing Systems (<strong>NeurIPS</strong>), 2026</i>
+							  <br> <a href="https://openreview.net/pdf?id=gUco1fy8uO" target="_blank">[Paper]</a>
+							  <a href="https://edem-ai.github.io/S2C/" target="_blank">[Project Page]</a>
+						  </li>
+
+						  <div style="margin: 0.5em 0;"> </div>
+
+						  <li><strong>Think-Capture: Active 3D Geometry Acquisition for Spatial Reasoning in Vision-Language Models</strong>
+							  <br> Junjie Wang, Zhihao Yuan, Yunhan Tang, <strong>Sheng Xu</strong>, Jiaqi Mao, Xiaoyu Ye, Yueru Luo, Xu Yan, Chun-Mei Feng, Zhen Li
+							  <br> <i>IEEE/CVF Winter Conference on Applications of Computer Vision (<strong>WACV</strong>), 2027</i>
+							  <br> <a href="https://arxiv.org/pdf/2610.29232" target="_blank">[Paper]</a>
+							  <a href="https://github.com/819346675/Think-Capture" target="_blank">[Code]</a>
+						  </li>
+
+						  <div style="margin: 0.5em 0;"> </div>
+
 						  <li><strong>Grounding Sim-to-Real Generalization in Dexterous Manipulation: An Empirical Study with Vision-Language-Action Models</strong>
 							  <br> Ruixing Jin, Zicheng Zhu, Ruixiang Ouyang, <strong>Sheng Xu</strong>, Bo Yue, Zhizheng Wu, Guiliang Liu
 							  <br> <i>European Conference on Computer Vision (<strong>ECCV</strong>), 2026</i>
@@ -1005,6 +1101,7 @@
 
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+	<script src="js/research.js"></script>
 
 	<!-- Publications tabs script -->
 	<script>
