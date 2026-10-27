@@ -155,25 +155,29 @@
 			    <h2 id="research-heading" class="colorlib-heading">Research Overview</h2>
 			    <div class="research-loop" data-active-stage="data">
 			      <header class="research-intro">
-			        <p>Closing the loop between data, foundation models, and real-world deployment.</p>
+			        <p>Closing the loop between embodied data, robot foundation models, and real-world deployment.</p>
 			      </header>
 
 			      <div class="research-explorer">
+			        <div class="research-map-controls" hidden>
+			          <div class="research-control-actions"><button type="button" class="research-play" aria-pressed="false"><span class="research-play-icon" aria-hidden="true">&#9654;</span> <span class="research-play-label">Play the loop</span></button><button type="button" class="research-next" hidden>Next stage <span aria-hidden="true">&#8594;</span></button></div>
+			        </div>
+
 			        <div class="research-map-area">
 			          <div class="research-map" role="group" aria-label="Explore three connected research directions">
-			            <svg class="research-connections" viewBox="0 0 760 520" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+			            <svg class="research-connections" viewBox="0 0 760 570" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
 			              <defs>
 			                <marker id="research-arrow-data" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2c98f0"/></marker>
 			                <marker id="research-arrow-training" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2c98f0"/></marker>
 			                <marker id="research-arrow-deployment" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2c98f0"/></marker>
 			              </defs>
-			              <circle class="research-track" cx="380" cy="250" r="180"/>
-			              <path class="research-edge research-edge-data" d="M 221.069 334.505 A 180 180 0 0 1 261.909 114.152" marker-end="url(#research-arrow-data)"/>
-			              <path class="research-edge research-edge-training" d="M 498.091 114.152 A 180 180 0 0 1 538.931 334.505" marker-end="url(#research-arrow-training)"/>
-			              <path class="research-edge research-edge-deployment" d="M 505.039 379.481 A 180 180 0 0 1 254.961 379.481" marker-end="url(#research-arrow-deployment)"/>
-			              <circle class="research-particle" r="4" fill="#2c98f0"><animateMotion dur="4.5s" repeatCount="indefinite" path="M 221.069 334.505 A 180 180 0 0 1 261.909 114.152"/></circle>
-			              <circle class="research-particle" r="4" fill="#2c98f0"><animateMotion dur="4.5s" repeatCount="indefinite" path="M 498.091 114.152 A 180 180 0 0 1 538.931 334.505"/></circle>
-			              <circle class="research-particle" r="4" fill="#2c98f0"><animateMotion dur="4.5s" repeatCount="indefinite" path="M 505.039 379.481 A 180 180 0 0 1 254.961 379.481"/></circle>
+			              <circle class="research-track" cx="380" cy="295" r="190"/>
+			              <path class="research-edge research-edge-data" d="M 199.299 353.713 A 190 190 0 0 1 340.497 109.152" marker-end="url(#research-arrow-data)"/>
+			              <path class="research-edge research-edge-training" d="M 419.503 109.152 A 190 190 0 0 1 560.701 353.713" marker-end="url(#research-arrow-training)"/>
+			              <path class="research-edge research-edge-deployment" d="M 521.198 422.135 A 190 190 0 0 1 238.802 422.135" marker-end="url(#research-arrow-deployment)"/>
+			              <circle class="research-particle" r="4" fill="#2c98f0"><animateMotion dur="4.5s" repeatCount="indefinite" path="M 199.299 353.713 A 190 190 0 0 1 340.497 109.152"/></circle>
+			              <circle class="research-particle" r="4" fill="#2c98f0"><animateMotion dur="4.5s" repeatCount="indefinite" path="M 419.503 109.152 A 190 190 0 0 1 560.701 353.713"/></circle>
+			              <circle class="research-particle" r="4" fill="#2c98f0"><animateMotion dur="4.5s" repeatCount="indefinite" path="M 521.198 422.135 A 190 190 0 0 1 238.802 422.135"/></circle>
 			            </svg>
 			            <span class="research-edge-label research-edge-label-data">Curated data</span>
 			            <span class="research-edge-label research-edge-label-training">Policy transfer</span>
@@ -195,28 +199,25 @@
 			        <div class="research-details">
 			          <article id="research-detail-data" class="research-detail is-active" data-stage-panel="data" aria-labelledby="research-title-data">
 			            <h4 id="research-title-data">Generate, curate, evaluate.</h4>
-			            <p class="research-description">Scale diverse robot data and measure how well it transfers to the real world.</p>
+			            <p class="research-description">Scale diverse robot data through simulation and bridge the sim-to-real gap.</p>
 			            <ul class="research-topics"><li>Generative simulation</li><li>Data quality &amp; diversity</li><li>Sim-to-real transfer</li></ul>
-			            <div class="research-related"><span>Representative work</span><a href="https://github.com/DexForce/EmbodiChain/" target="_blank" rel="noopener noreferrer">EmbodiChain <span aria-hidden="true">&#8599;</span></a><a href="https://openreview.net/pdf?id=H4SyKHjd4c" target="_blank" rel="noopener noreferrer">Sim2Real-VLA <span aria-hidden="true">&#8599;</span></a><a href="https://arxiv.org/abs/2603.22876" target="_blank" rel="noopener noreferrer">Sim-to-real study <span aria-hidden="true">&#8599;</span></a></div>
+			            <div class="research-related"><span>Representative work</span><a href="https://github.com/DexForce/EmbodiChain/" target="_blank" rel="noopener noreferrer">EmbodiChain <span aria-hidden="true">&#8599;</span></a><a href="https://openreview.net/pdf?id=H4SyKHjd4c" target="_blank" rel="noopener noreferrer">Sim2Real-VLA <span aria-hidden="true">&#8599;</span></a></div>
 			          </article>
 			          <article id="research-detail-training" class="research-detail" data-stage-panel="training" aria-labelledby="research-title-training" hidden>
 			            <h4 id="research-title-training">Learn across embodiments.</h4>
-			            <p class="research-description">Align heterogeneous experience to pretrain generalist robot foundation models.</p>
+			            <p class="research-description">Pretrain generalist robot foundation models with heterogeneous data from ego videos, UMI, real robots, and simulation.</p>
 			            <ul class="research-topics"><li>Multimodal alignment</li><li>Shared action spaces</li><li>Scalable pretraining</li></ul>
 			            <div class="research-related"><span>Representative work</span><a href="https://joyai-ra-05.github.io/" target="_blank" rel="noopener noreferrer">JoyAI-RA 0.5 <span aria-hidden="true">&#8599;</span></a></div>
 			          </article>
 			          <article id="research-detail-deployment" class="research-detail" data-stage-panel="deployment" aria-labelledby="research-title-deployment" hidden>
 			            <h4 id="research-title-deployment">Deploy, recover, improve.</h4>
-			            <p class="research-description">Build reliable embodied agents and align policies with uncertain human preferences.</p>
-			            <ul class="research-topics"><li>Agentic recovery</li><li>Preference-based RL</li><li>Uncertainty-aware alignment</li></ul>
+			            <p class="research-description">Build reliable embodied agents for deployment on real robots.</p>
+			            <ul class="research-topics"><li>Agentic system</li><li>Recursive self-improvement</li><li>Preference-based RL</li></ul>
 			            <div class="research-related"><span>Representative work</span><a href="https://shengxu.net/AgentChord/" target="_blank" rel="noopener noreferrer">AgentChord <span aria-hidden="true">&#8599;</span></a><a href="https://openreview.net/pdf?id=RKOAU5ti1y" target="_blank" rel="noopener noreferrer">UA-PbRL <span aria-hidden="true">&#8599;</span></a><a href="https://openreview.net/pdf?id=oG1CIBWQ77" target="_blank" rel="noopener noreferrer">Diff-UAPA <span aria-hidden="true">&#8599;</span></a></div>
 			          </article>
 			        </div>
 			          </div>
 
-			          <div class="research-map-controls" hidden>
-			            <div class="research-control-actions"><button type="button" class="research-play" aria-pressed="false"><span class="research-play-icon" aria-hidden="true">&#9654;</span> <span class="research-play-label">Play the loop</span></button><button type="button" class="research-next" hidden>Next stage <span aria-hidden="true">&#8594;</span></button></div>
-			          </div>
 			        </div>
 
 
@@ -781,15 +782,6 @@
 
 						  <div style="margin: 0.5em 0;"> </div>
 
-						  <li><strong>Dexterity-BEV: Aligning 3D World and Actions for Generalizable Robot Policies Learning</strong>
-							  <br> Huayi Zhou, Wei Gao, Dekun Lu, Ruiji Liu, Zhanqi Zhang, Ziyang Zhang, Jian Chen, Wenlve Zhou, <strong>Sheng Xu</strong>, Shumin Li, Kangyi Guo, Shichen Xu, Zixin Huang, Yongyi Su, Kui Jia
-							  <br> <i>Conference on Robot Learning (<strong>CoRL</strong>), 2026</i>
-							  <br> <a href="https://arxiv.org/abs/2606.02274" target="_blank">[Paper]</a>
-							  <a href="https://hnuzhy.github.io/projects/Dex-BEV/" target="_blank">[Project Page]</a>
-						  </li>
-
-						  <div style="margin: 0.5em 0;"> </div>
-
 						  <li><strong>Focus-Then-Contact: Speeding Up Robotic Contact-Rich Task Learning with Affordance-Guided Real-World Residual Reinforcement Learning</strong>
 							  <br> Guanren Qiao, Ruixiang Ouyang, <strong>Sheng Xu</strong>, Ruixing Jin, Yueci Deng, Yunxin Tai, Kui Jia, Guiliang Liu
 							  <br> <i>International Conference on Machine Learning (<strong>ICML</strong>), 2026</i>
@@ -821,6 +813,15 @@
 							  <br> Ruixing Jin, Zicheng Zhu, Ruixiang Ouyang, <strong>Sheng Xu</strong>, Bo Yue, Zhizheng Wu, Guiliang Liu
 							  <br> <i>European Conference on Computer Vision (<strong>ECCV</strong>), 2026</i>
 							  <br> <a href="https://arxiv.org/abs/2603.22876" target="_blank">[Paper]</a>
+						  </li>
+
+						  <div style="margin: 0.5em 0;"> </div>
+
+						  <li><strong>Dexterity-BEV: Aligning 3D World and Actions for Generalizable Robot Policies Learning</strong>
+							  <br> Huayi Zhou, Wei Gao, Dekun Lu, Ruiji Liu, Zhanqi Zhang, Ziyang Zhang, Jian Chen, Wenlve Zhou, <strong>Sheng Xu</strong>, Shumin Li, Kangyi Guo, Shichen Xu, Zixin Huang, Yongyi Su, Kui Jia
+							  <br> <i>Conference on Robot Learning (<strong>CoRL</strong>), 2026</i>
+							  <br> <a href="https://arxiv.org/abs/2606.02274" target="_blank">[Paper]</a>
+							  <a href="https://hnuzhy.github.io/projects/Dex-BEV/" target="_blank">[Project Page]</a>
 						  </li>
 
 						  <div style="margin: 0.5em 0;"> </div>
