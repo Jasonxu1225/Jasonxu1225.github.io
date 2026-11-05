@@ -1500,7 +1500,11 @@ body.offcanvas {
 }
 
 .site-footer {
-  margin-top: 24px;
+  margin-top: 16px;
+}
+
+[data-section="service"] .row:last-child > div > ul {
+  margin-bottom: 0;
 }
 
 .site-footer-content {
